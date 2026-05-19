@@ -2,34 +2,93 @@
 <html>
 <head>
     <title>Sai Raghavendra Lubricants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
         }
+
         header {
-            background: #000;
+            background: url('https://images.unsplash.com/photo-1581091215367-59ab6b7d06b2') no-repeat center/cover;
             color: white;
-            padding: 20px;
+            padding: 80px 20px;
             text-align: center;
         }
-        section {
-            padding: 20px;
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        .box {
+
+        header p {
+            font-size: 18px;
+        }
+
+        .btn-main {
+            background: #25D366;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
             background: white;
-            padding: 15px;
-            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .service-box {
+            background: #eef2f7;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
             border-radius: 10px;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            background: green;
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -38,30 +97,43 @@
 
 <header>
     <h1>Sai Raghavendra Lubricants</h1>
-    <p>Best Lubrication Shop in Coimbatore</p>
+    <p>Trusted Lubrication & Oil Service in Coimbatore</p>
+    <a class="btn-main" href="https://wa.me/919789649901">Chat on WhatsApp</a>
 </header>
 
-<section>
-    <div class="box">
-        <h2>📍 Address</h2>
+<div class="container">
+
+    <div class="card">
+        <h2>📍 Our Location</h2>
         <p>532, Sanganoor Main Road, Ganapathy, Coimbatore - 641006</p>
     </div>
 
-    <div class="box">
-        <h2>🛠 Services</h2>
-        <p>All types of vehicle lubricants, oil change, and maintenance</p>
+    <div class="card">
+        <h2>🛠 Our Services</h2>
+        <div class="services">
+            <div class="service-box">Engine Oil Change</div>
+            <div class="service-box">Bike & Car Lubrication</div>
+            <div class="service-box">Grease Services</div>
+            <div class="service-box">Maintenance Support</div>
+        </div>
     </div>
 
-    <div class="box">
-        <h2>📞 Contact</h2>
-        <p>9789649901</p>
+    <div class="card">
+        <h2>📞 Contact Us</h2>
+        <p>Phone: 9789649901</p>
+        <a class="btn-main" href="https://wa.me/919789649901">Message on WhatsApp</a>
     </div>
 
-    <div class="box">
-        <h2>💬 WhatsApp</h2>
-        <a class="btn" href="https://wa.me/919789649901">Chat on WhatsApp</a>
+    <div class="card">
+        <h2>🗺 Find Us</h2>
+        <iframe src="https://maps.google.com/maps?q=ganapathy%20coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed" height="250"></iframe>
     </div>
-</section>
+
+</div>
+
+<footer>
+    © 2026 Sai Raghavendra Lubricants | All Rights Reserved
+</footer>
 
 </body>
 </html>
