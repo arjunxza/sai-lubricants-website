@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sai Raghavendra Lubricants</title>
+</head>
+
+<body style="font-family:Arial; text-align:center;">
+
+<h1>Sai Raghavendra Lubricants</h1>
+
+<p>📍 532, Sanganoor Main road, Ganapathy, Coimbatore</p>
+
+<p>📞 9789649901</p>
+
+<h2>Our Services</h2>
+<p>All types of lubricants available</p>
+
+<h2>Contact Us</h2>
+<a href="https://wa.me/919789649901">Chat on WhatsApp</a>
+
+</body>
+</html>
