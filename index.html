@@ -19,11 +19,6 @@
 
         header h1 {
             font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
         }
 
         .btn-main {
@@ -42,34 +37,30 @@
             margin: auto;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
         .card {
             background: white;
             padding: 20px;
+            margin-bottom: 20px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
-        .card h2 {
-            margin-top: 0;
-        }
-
-        .services {
+        .services, .brands {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            gap: 15px;
         }
 
-        .service-box {
+        .box {
             background: #eef2f7;
-            padding: 10px;
+            padding: 12px;
             border-radius: 8px;
             text-align: center;
+        }
+
+        .brands img {
+            width: 120px;
+            height: auto;
         }
 
         iframe {
@@ -82,11 +73,10 @@
             padding: 20px;
             background: #111;
             color: white;
-            margin-top: 20px;
         }
 
         @media (max-width: 600px) {
-            .services {
+            .services, .brands {
                 grid-template-columns: 1fr;
             }
         }
@@ -111,10 +101,22 @@
     <div class="card">
         <h2>🛠 Our Services</h2>
         <div class="services">
-            <div class="service-box">Engine Oil Change</div>
-            <div class="service-box">Bike & Car Lubrication</div>
-            <div class="service-box">Grease Services</div>
-            <div class="service-box">Maintenance Support</div>
+            <div class="box">Engine Oil Change</div>
+            <div class="box">Bike & Car Lubrication</div>
+            <div class="box">Grease Services</div>
+            <div class="box">Maintenance Support</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🏷 Brands We Use</h2>
+        <div class="brands">
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Castrol_logo.svg" alt="Castrol">
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/IndianOil_Servo_logo.png" alt="Servo">
+            </div>
         </div>
     </div>
 
