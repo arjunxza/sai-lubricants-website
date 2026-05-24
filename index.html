@@ -1,84 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sai Raghavendra Lubricants</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Ragavendra Lubricants</title>
+
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f5f7fa;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
         }
 
         header {
-            background: url('https://images.unsplash.com/photo-1581091215367-59ab6b7d06b2') no-repeat center/cover;
+            background: linear-gradient(to right, #009639, #006b2d);
             color: white;
-            padding: 80px 20px;
             text-align: center;
+            padding: 25px;
         }
 
         header h1 {
-            font-size: 36px;
+            margin: 0;
+            font-size: 28px;
         }
 
-        .btn-main {
-            background: #25D366;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 6px;
-            display: inline-block;
-            margin-top: 15px;
+        header p {
+            margin: 5px 0 0;
+            font-size: 14px;
         }
 
         .container {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
         }
 
         .card {
             background: white;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .services, .brands {
+        .card h2 {
+            color: #009639;
+            border-left: 5px solid #D50000;
+            padding-left: 10px;
+        }
+
+        .services {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
         }
 
         .box {
-            background: #eef2f7;
+            background: #e8f5e9;
             padding: 12px;
             border-radius: 8px;
             text-align: center;
+            border: 1px solid #009639;
+            font-weight: bold;
+        }
+
+        .brands {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
         }
 
         .brands img {
             width: 120px;
-            height: auto;
         }
 
-        iframe {
-            width: 100%;
-            border-radius: 10px;
+        .whatsapp {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp a {
+            background: #009639;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             background: #111;
             color: white;
-        }
-
-        @media (max-width: 600px) {
-            .services, .brands {
-                grid-template-columns: 1fr;
-            }
+            font-size: 14px;
         }
     </style>
 </head>
@@ -86,55 +101,51 @@
 <body>
 
 <header>
-    <h1>Sai Raghavendra Lubricants</h1>
-    <p>Trusted Lubrication & Oil Service in Coimbatore</p>
-    <a class="btn-main" href="https://wa.me/919789649901">Chat on WhatsApp</a>
+    <h1>Sai Ragavendra Lubricants</h1>
+    <p>
+        Sri Puthumariamman, 531 Sanganur Main Road,<br>
+        Gopalasamy Koil Street, Opposite Ganapathy,<br>
+        Coimbatore, Tamil Nadu - 641006<br>
+        📞 9789649901
+    </p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>📍 Our Location</h2>
-        <p>532, Sanganoor Main Road, Ganapathy, Coimbatore - 641006</p>
-    </div>
-
-    <div class="card">
-        <h2>🛠 Our Services</h2>
+        <h2>Our Services</h2>
         <div class="services">
-            <div class="box">Engine Oil Change</div>
-            <div class="box">Bike & Car Lubrication</div>
-            <div class="box">Grease Services</div>
-            <div class="box">Maintenance Support</div>
+            <div class="box">Engine Oil</div>
+            <div class="box">Bike Oil</div>
+            <div class="box">Car Oil</div>
+            <div class="box">Industrial Lubricants</div>
         </div>
     </div>
 
     <div class="card">
-        <h2>🏷 Brands We Use</h2>
+        <h2>Our Brands</h2>
         <div class="brands">
-            <div class="box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Castrol_logo.svg" alt="Castrol">
-            </div>
-            <div class="box">
-                <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/IndianOil_Servo_logo.png" alt="Servo">
-            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Castrol_logo_2016.svg" alt="Castrol">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/IndianOil_Servo.png" alt="Servo">
         </div>
     </div>
 
     <div class="card">
-        <h2>📞 Contact Us</h2>
-        <p>Phone: 9789649901</p>
-        <a class="btn-main" href="https://wa.me/919789649901">Message on WhatsApp</a>
-    </div>
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 9789649901</p>
+        <p><strong>Email:</strong> sriragavendralubricants@gmail.com</p>
 
-    <div class="card">
-        <h2>🗺 Find Us</h2>
-        <iframe src="https://maps.google.com/maps?q=ganapathy%20coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed" height="250"></iframe>
+        <div class="whatsapp">
+            <a href="https://wa.me/919789649901" target="_blank">
+                Chat on WhatsApp
+            </a>
+        </div>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Sai Raghavendra Lubricants | All Rights Reserved
+    © 2026 Sai Ragavendra Lubricants | All Rights Reserved
 </footer>
 
 </body>
